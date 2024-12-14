@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: bcf6950c190db3d479ccd9ec5ab36894
+  productGUID: 00000000000000000000000000000000
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -728,7 +728,7 @@ PlayerSettings:
     tvOS: UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture:
-    iPhone: 1
+    iPhone: 2
   scriptingBackend:
     WP8: 2
     WebGL: 1
@@ -849,7 +849,7 @@ PlayerSettings:
   cloudProjectId: 01017865-ba27-48ce-98a4-d24f66b51a73
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tiny Village
+  projectName: 
   organizationId: bcu7
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
