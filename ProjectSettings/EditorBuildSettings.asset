@@ -9,5 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/The_Viking_Village.unity
     guid: 00000000000000000000000000000000
   m_configObjects:
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 56a98106ce58f09459a9990007b50acb,
+      type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 5ed07a8dce8eb114c8157c6072241fb7,
       type: 2}
