@@ -96,12 +96,20 @@ public class Villager : MonoBehaviour
         if (currentTask == TaskType.ChopWood && currentTarget != null)
         {
             TreeChopping tree = currentTarget.GetComponent<TreeChopping>();
-            if (tree != null) tree.Chop();
+            if (tree != null)
+            {
+                tree.Chop();
+                ResourceManager.Instance.AddWood(10); // Toplam odun miktarýný 1 artýr
+            }
         }
         else if (currentTask == TaskType.Mine && currentTarget != null)
         {
             MineResource mine = currentTarget.GetComponent<MineResource>();
-            if (mine != null) mine.Mine();
+            if (mine != null)
+            {
+                mine.Mine();
+                ResourceManager.Instance.AddStone(10); // Toplam maden miktarýný 1 artýr
+            }
         }
 
         // Yeni hedef kontrolü
@@ -126,6 +134,7 @@ public class Villager : MonoBehaviour
 
         isPerformingTask = false;
     }
+
 
     void PlaySound(AudioClip clip)
     {
