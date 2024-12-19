@@ -14,8 +14,15 @@ public class VillagerManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O)) AssignTaskToVillager(TaskType.ChopWood);
-        if (Input.GetKeyDown(KeyCode.M)) AssignTaskToVillager(TaskType.Mine);
+        if (OVRInput.GetDown(OVRInput.Button.One)) // "A" butonu
+        {
+            AssignTaskToVillager(TaskType.ChopWood);
+        }
+
+        if (OVRInput.GetDown(OVRInput.Button.Two)) // "B" butonu
+        {
+            AssignTaskToVillager(TaskType.Mine);
+        }
     }
 
     public void AssignTaskToVillager()

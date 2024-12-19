@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tree
   - Mine
+  - Sphere
+  - Player1
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - 
   - MainGround
   - Villager
-  - 
+  - Tree
   - 
   - 
   - 

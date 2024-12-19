@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -21,6 +22,8 @@ public class Villager : MonoBehaviour
     private float taskTimer;         // Zamanlayýcý
     private bool isPerformingTask = false; // Görev aktif mi?
     private Transform currentTarget; // Hedef
+    public VillagerManager villagerManager;
+
 
     void Start()
     {
@@ -158,4 +161,13 @@ public class Villager : MonoBehaviour
         if (axeTool != null) axeTool.SetActive(false);
         if (pickaxeTool != null) pickaxeTool.SetActive(false);
     }
+   
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("Sphere"))
+    //    {
+    //        villagerManager.AssignTaskToVillager(TaskType.ChopWood);
+
+    //    }
+    //}
 }
